@@ -11,6 +11,8 @@ export const getPokemons = () =>
     const timeout = getRandomInt(250, 1000)
     if (!POKEMONS)
       return setTimeout(() => reject(new Error('Pokemons not found')), timeout)
-
+    POKEMONS.forEach((p) => {
+      p.name = p.name.replace(/-/g, ' ')
+    })
     setTimeout(() => resolve(POKEMONS), timeout)
   })
