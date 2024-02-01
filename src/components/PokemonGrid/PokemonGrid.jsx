@@ -1,15 +1,7 @@
-import Card from '../Card/Card'
-
 import './PokemonGrid.css'
 
-const PokemonGrid = ({ pokemons }) => {
-  return (
-    <div className="pokemon-grid">
-      {pokemons.map((pokemon, idx) => (
-        <Card key={idx} pokemon={pokemon} />
-      ))}
-    </div>
-  )
+const PokemonGrid = () => {
+  return <div className="pokemon-grid"></div>
 }
 
 export default PokemonGrid

@@ -1,34 +1,8 @@
 import './Card.css'
+// import { getImageURL } from '../../utils/getImageURL'
 
-const Card = ({ pokemon }) => {
-  const getImageURL = (pokemonId) => {
-    const baseURL =
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other'
-    return `${baseURL}/dream-world/${pokemonId}.svg`
-  }
-
-  const imgURL = getImageURL(pokemon.id)
-  const cardClassNames = pokemon.types
-    .map(({ type }) => 'type-' + type.name)
-    .join(' ')
-
-  return (
-    <div className={`card ${cardClassNames}`}>
-      <div className="card-title">
-        <h2 className="card-title-name">{pokemon.name}</h2>
-        <div className="type-badge-container">
-          {pokemon.types.map(({ type }) => (
-            <span key={type.name} className={`type-badge ${cardClassNames}`}>
-              {type.name}
-            </span>
-          ))}
-        </div>
-      </div>
-      <div className="card-image">
-        <img alt={pokemon.name} src={imgURL} />
-      </div>
-    </div>
-  )
+const Card = () => {
+  return <div className={`card`}></div>
 }
 
 export default Card

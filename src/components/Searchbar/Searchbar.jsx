@@ -1,17 +1,7 @@
 import './Searchbar.css'
 
-const Searchbar = ({ searchInput, handleChange }) => {
-  return (
-    <div className="searchbar">
-      <label htmlFor="search">Search for a pokemon</label>
-      <input
-        id="search"
-        type="text"
-        value={searchInput}
-        onChange={handleChange}
-      />
-    </div>
-  )
+const Searchbar = () => {
+  return <div className="searchbar"></div>
 }
 
 export default Searchbar
