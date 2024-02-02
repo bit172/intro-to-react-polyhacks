@@ -1,12 +1,7 @@
+import { getImageURL } from '../../utils/getImageUrl'
 import './Card.css'
 
 const Card = ({ pokemon }) => {
-  const getImageURL = (pokemonId) => {
-    const baseURL =
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other'
-    return `${baseURL}/dream-world/${pokemonId}.svg`
-  }
-
   const imgURL = getImageURL(pokemon.id)
   const cardClassNames = pokemon.types
     .map(({ type }) => 'type-' + type.name)
