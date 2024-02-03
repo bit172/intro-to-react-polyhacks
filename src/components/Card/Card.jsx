@@ -1,5 +1,5 @@
 import './Card.css'
-// import { getImageURL } from '../../utils/getImageURL'
+import { getImageUrl } from '../../utils/getImageUrl'
 
 const Card = () => {
   return <div className={`card`}></div>

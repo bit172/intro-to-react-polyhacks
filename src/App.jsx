@@ -1,3 +1,5 @@
+// import POKEMONS from './constants/Pokemons.json'
+
 import './App.css'
 
 function App() {
